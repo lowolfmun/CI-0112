@@ -56,7 +56,7 @@ public class Robot{
     public void atacar(Robot otroRobot){
         if(puntosDeVida!=0 && otroRobot.puntosDeVida != 0){
             otroRobot.puntosDeVida = otroRobot.puntosDeVida - (ataque-otroRobot.defensa);
-            System.out.println(nombre+" ataco a "+otroRobot.nombre);
+            System.out.println(nombre+" ataco a "+otroRobot.nombre+" y le hizo "+(ataque-otroRobot.defensa)+" de daño");
         }
     }
     public boolean estaVivo(){
